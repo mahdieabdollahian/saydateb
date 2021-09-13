@@ -1,0 +1,33 @@
+@import "../../../assets/style/colors.scss";
+.modal_paper {
+  margin: 16px !important;
+  font-size: 0.9rem;
+}
+.title_root {
+  margin-bottom: 20px;
+  & > h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+    & > img {
+      width: 100px;
+    }
+    & > span {
+      font-size: 1.3rem;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+  }
+}
+.action_root {
+  padding: 24px;
+}
+.content {
+  padding-right: 50px;
+  padding-left: 50px;
+}

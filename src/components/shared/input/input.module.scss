@@ -1,0 +1,77 @@
+@import "../../../assets/style/colors.scss";
+
+.fieldSet {
+  position: relative;
+  margin-bottom: 0px !important;
+  & > div {
+    width: 100%;
+    direction: rtl;
+    & > div {
+      color: $input_text;
+      &::before {
+        border-bottom: 1px solid $input_border !important;
+      }
+      &::after {
+        border-bottom: 1px solid $primary_color;
+      }
+      &:hover {
+        &::before {
+          border-bottom: 2px solid $input_border !important;
+        }
+        &::after {
+          border-bottom: 2px solid $primary_color;
+        }
+      }
+      & > input {
+        width: 100%;
+        height: 40px;
+        border: none !important;
+        outline: 0 !important;
+        border-bottom: 1px solid $input_border;
+        background-color: transparent;
+        font-size: 0.9rem;
+        padding-right: 5px;
+        box-sizing: border-box;
+        color: $input_text;
+        text-align: center;
+        &::placeholder {
+          color: $text_gray;
+          opacity: 0.9;
+        }
+        &:focus {
+          outline: none;
+          border: none;
+          border-color: 1px solid $primary_color;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  & > span {
+    position: absolute;
+    bottom: 18px;
+    left: 12px;
+    font-size: 1.2rem;
+    color: $text_gray;
+  }
+  & > label {
+    display: inline-block;
+    color: $text_gray;
+    margin-bottom: 5px;
+  }
+  .errorText {
+    position: absolute;
+    font-size: 0.7rem;
+    color: $secondery_color;
+    text-align: right;
+  }
+}
+
+.shrinkLabel {
+  transform-origin: top right !important;
+}
+.root {
+  font-size: 0.9rem;
+  color: $input_text;
+}

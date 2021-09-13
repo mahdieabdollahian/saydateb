@@ -1,0 +1,37 @@
+@import "../../../assets/style/colors.scss";
+.button {
+  width: 97%;
+  background-color: $primary_color !important;
+  color: $near_white !important;
+  box-shadow: none !important;
+  height: 46px;
+  display: flex;
+  margin: 20px auto !important;
+  &:hover {
+    background-color: $primary_hover !important;
+  }
+  &:disabled {
+    opacity: 0.7;
+    &:hover {
+      background-color: $primary_color !important;
+    }
+  }
+  .loginIcon {
+    position: absolute;
+    left: 11px;
+    font-size: 20px;
+  }
+  .normalIcon {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+}
+
+.buttonProgress {
+  color: $shadow !important;
+  position: absolute;
+  top: 22px;
+  left: 23px;
+  margin-top: -12px;
+  margin-left: -12px;
+}

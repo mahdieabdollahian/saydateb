@@ -1,0 +1,66 @@
+@import "../../../assets/style/colors.scss";
+
+.root {
+  display: flex;
+}
+.drawer {
+  width: 240px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.drawerOpen {
+  width: 240px;
+  transition: width linear 0.3s;
+}
+.drawerClose {
+  transition: width linear 0.3s;
+
+  overflow-x: hidden;
+  width: 50px;
+}
+.menuButton {
+  margin-right: 36;
+}
+.hide {
+  display: none;
+}
+.content {
+  flex-grow: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .mainContent {
+    height: 100%;
+    padding: 20px;
+  }
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  min-height: 60px;
+}
+.headertitle {
+  margin-bottom: 40px;
+  .icon {
+    color: $primary_color;
+    margin-left: 10px;
+  }
+  .title {
+    color: white;
+    font-size: 1rem;
+  }
+}
+.footer {
+  height: 50px;
+  background-color: $menu;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

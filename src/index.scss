@@ -1,0 +1,130 @@
+@import "./assets/style/colors.scss";
+@font-face {
+  font-family: iransans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/iransans/N_IRANSansWeb.woff2") format("opentype");
+}
+@font-face {
+  font-family: iransans;
+  font-style: bold;
+  font-weight: 700;
+  src: url("./assets/fonts/iransans/N_IRANSansWeb_Bold.woff2")
+    format("opentype");
+  font-display: swap;
+}
+* {
+  font-family: iransans, icomoon !important;
+  direction: rtl;
+}
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  direction: rtl;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  height: 100vh;
+  background-color: $backColor;
+  overflow: auto;
+}
+.MuiDialog-paperFullScreen {
+  background-color: $backColor !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+
+.MuiDrawer-paper {
+  width: 230px;
+  background-color: $menu !important;
+  overflow-x: hidden;
+}
+.MuiListItem-button {
+  text-align: right !important;
+  & > div {
+    & > span {
+      font-size: 0.8rem;
+    }
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 32px) !important;
+}
+.active {
+  background: $activeColor;
+}
+.MuiTabScrollButton-root.Mui-disabled {
+  opacity: 1 !important;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+.PrivateTabIndicator-colorSecondary-3 {
+  background-color: $activeColor !important;
+}
+.example-appear {
+  opacity: 0.01;
+}
+.MuiAccordionSummary-expandIcon {
+  font-size: 0.9rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+.MuiTypography-colorPrimary {
+  color: $primary_color !important;
+}
+
+.MuiFormControlLabel-root {
+  color: $text_gray;
+  margin-right: 0 !important;
+}

@@ -1,0 +1,9 @@
+{
+  "short_name": "نویسا",
+  "name": "نویسا",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#005faa"
+}

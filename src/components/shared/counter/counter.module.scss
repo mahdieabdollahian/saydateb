@@ -1,0 +1,22 @@
+@import "../../../assets/style/colors.scss";
+
+.counter_container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: $text_gray;
+  .counter {
+    display: inline-block;
+    width: 100px;
+    margin: 30px auto;
+    & > span {
+      display: inline-block;
+      margin: 0 5px;
+      direction: ltr;
+    }
+  }
+  .retry {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

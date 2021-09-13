@@ -1,0 +1,48 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: "module",
+  },
+  plugins: ["react"],
+  rules: {
+    "global-require": 0,
+    "no-else-return": 0,
+    "react/prop-types": 0,
+    "react/jsx-boolean-value": 0,
+    "func-names": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/jsx-no-target-blank": 0,
+    "no-use-before-define": 0,
+    "no-param-reassign": [2, { props: false }],
+    "react/jsx-props-no-spreading": "off",
+    "linebreak-style": 0,
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
+    curly: ["error", "all"],
+    "max-len": ["error", { code: 92, ignoreUrls: true }],
+    "no-mixed-operators": "error",
+    "no-unexpected-multiline": "error",
+    quotes: ["error", "double", { avoidEscape: true, allowTemplateLiterals: false }],
+    "lines-around-comment": [
+      "error",
+      {
+        beforeBlockComment: true,
+        afterBlockComment: true,
+        allowBlockStart: true,
+        allowBlockEnd: true,
+        allowObjectStart: true,
+        allowObjectEnd: true,
+        allowArrayStart: true,
+        allowArrayEnd: true,
+      },
+    ],
+  },
+};

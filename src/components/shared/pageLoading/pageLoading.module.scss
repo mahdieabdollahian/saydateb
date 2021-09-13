@@ -1,0 +1,35 @@
+@import "../../../assets/style/colors.scss";
+
+.loadingContainer {
+  // background: url(../../../assets/images/splashscreen_bg.jpg) no-repeat center center
+  // fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20vh 10% 10vh 11%;
+    & > img {
+      height: 70px;
+    }
+    & > div {
+      background-color: $secondery_color;
+      width: 2px;
+      height: 70px;
+    }
+  }
+  .hafizLogo {
+    margin: 20px auto;
+    width: 70px;
+  }
+  .buttonProgress {
+    color: #b6daec;
+    margin: 0 auto;
+  }
+}
